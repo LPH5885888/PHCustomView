@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PHCustomView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWG-TC-zNG">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="19Z-q8-oJd"/>
+                                    <constraint firstAttribute="width" constant="200" id="b5o-eN-uNH"/>
+                                </constraints>
+                                <state key="normal" title="showCustomView">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCustomViewClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gEQ-KC-Qlf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7l-nJ-pO1">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="247" id="UQp-Tl-3gU"/>
+                                    <constraint firstAttribute="height" constant="30" id="Zfy-T4-7ds"/>
+                                </constraints>
+                                <state key="normal" title="showAnimatorController">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAnimatorController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NxT-KG-290"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPf-UU-pqb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="ZhW-Sc-dOP"/>
+                                    <constraint firstAttribute="height" constant="30" id="rRC-As-Zjw"/>
+                                </constraints>
+                                <state key="normal" title="showMpMoviePlayerView">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMoviePlayerView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3CZ-WZ-BA5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jWG-TC-zNG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1wx-86-oXX"/>
+                            <constraint firstItem="fPf-UU-pqb" firstAttribute="top" secondItem="j7l-nJ-pO1" secondAttribute="bottom" constant="30" id="82j-pc-1ZS"/>
+                            <constraint firstItem="fPf-UU-pqb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DPr-Ox-jV5"/>
+                            <constraint firstItem="j7l-nJ-pO1" firstAttribute="top" secondItem="jWG-TC-zNG" secondAttribute="bottom" constant="30" id="KC0-QQ-Mpk"/>
+                            <constraint firstItem="j7l-nJ-pO1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RJi-2a-Qqx"/>
+                            <constraint firstItem="jWG-TC-zNG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="Rys-uT-WCF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
