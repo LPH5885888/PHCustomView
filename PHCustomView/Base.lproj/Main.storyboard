@@ -54,15 +54,25 @@
                                     <action selector="showMoviePlayerView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3CZ-WZ-BA5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4W-zy-Flb">
+                                <state key="normal" title="showPopupWindowView">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPopupWindowView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="by9-0q-YsB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jWG-TC-zNG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1wx-86-oXX"/>
                             <constraint firstItem="fPf-UU-pqb" firstAttribute="top" secondItem="j7l-nJ-pO1" secondAttribute="bottom" constant="30" id="82j-pc-1ZS"/>
                             <constraint firstItem="fPf-UU-pqb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DPr-Ox-jV5"/>
+                            <constraint firstItem="U4W-zy-Flb" firstAttribute="top" secondItem="fPf-UU-pqb" secondAttribute="bottom" constant="30" id="I4I-UH-3ap"/>
                             <constraint firstItem="j7l-nJ-pO1" firstAttribute="top" secondItem="jWG-TC-zNG" secondAttribute="bottom" constant="30" id="KC0-QQ-Mpk"/>
                             <constraint firstItem="j7l-nJ-pO1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RJi-2a-Qqx"/>
                             <constraint firstItem="jWG-TC-zNG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="Rys-uT-WCF"/>
+                            <constraint firstItem="U4W-zy-Flb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f2e-my-7QN"/>
                         </constraints>
                     </view>
                 </viewController>

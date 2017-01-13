@@ -113,11 +113,20 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
         mvPlayer.stop()
         mvPlayer.view.removeFromSuperview()
     }
+
+    @IBAction func showPopupWindowView(_ sender: AnyObject) {
+        
+        let vc = PHPopupViewController()
+        
+        let pop = PHPopupWindowView.popupWindowWithView(popupView: vc.view)
+        pop.scaleNum = 0.7  //自定义缩小比例 & 默认0.5
+        pop.showPopupView() //show出modalView
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

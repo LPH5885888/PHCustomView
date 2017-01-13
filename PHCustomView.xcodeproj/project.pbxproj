@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0480E7311E28713F00303EC6 /* PHPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480E72F1E28713F00303EC6 /* PHPopupViewController.swift */; };
+		0480E7321E28713F00303EC6 /* PHPopupWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480E7301E28713F00303EC6 /* PHPopupWindowView.swift */; };
 		048469FD1E0CCBBC000D549C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048469F81E0CCBBC000D549C /* AppDelegate.swift */; };
 		048469FE1E0CCBBC000D549C /* PHCustimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048469F91E0CCBBC000D549C /* PHCustimViewController.swift */; };
 		048469FF1E0CCBBC000D549C /* PHCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048469FA1E0CCBBC000D549C /* PHCustomView.swift */; };
@@ -41,10 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0480E72F1E28713F00303EC6 /* PHPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPopupViewController.swift; sourceTree = "<group>"; };
+		0480E7301E28713F00303EC6 /* PHPopupWindowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPopupWindowView.swift; sourceTree = "<group>"; };
 		048469F81E0CCBBC000D549C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		048469F91E0CCBBC000D549C /* PHCustimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCustimViewController.swift; sourceTree = "<group>"; };
-		048469FA1E0CCBBC000D549C /* PHCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCustomView.swift; sourceTree = "<group>"; };
-		048469FB1E0CCBBC000D549C /* PHPresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPresentingAnimator.swift; sourceTree = "<group>"; };
+		048469F91E0CCBBC000D549C /* PHCustimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PHCustimViewController.swift; path = ../PHCustimViewController.swift; sourceTree = "<group>"; };
+		048469FA1E0CCBBC000D549C /* PHCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PHCustomView.swift; path = ../PHCustomView.swift; sourceTree = "<group>"; };
+		048469FB1E0CCBBC000D549C /* PHPresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PHPresentingAnimator.swift; path = ../PHPresentingAnimator.swift; sourceTree = "<group>"; };
 		048469FC1E0CCBBC000D549C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04846A061E0CCC2C000D549C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		04846A071E0CCC2C000D549C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
@@ -97,13 +101,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0480E72C1E28713000303EC6 /* CustomDissmis */ = {
+			isa = PBXGroup;
+			children = (
+				048469FB1E0CCBBC000D549C /* PHPresentingAnimator.swift */,
+				048469F91E0CCBBC000D549C /* PHCustimViewController.swift */,
+			);
+			path = CustomDissmis;
+			sourceTree = "<group>";
+		};
+		0480E72D1E28713900303EC6 /* CustonAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				048469FA1E0CCBBC000D549C /* PHCustomView.swift */,
+			);
+			path = CustonAlertView;
+			sourceTree = "<group>";
+		};
+		0480E72E1E28713F00303EC6 /* CustomPopupWindow */ = {
+			isa = PBXGroup;
+			children = (
+				0480E72F1E28713F00303EC6 /* PHPopupViewController.swift */,
+				0480E7301E28713F00303EC6 /* PHPopupWindowView.swift */,
+			);
+			path = CustomPopupWindow;
+			sourceTree = "<group>";
+		};
 		048469F71E0CCBBC000D549C /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				0480E72D1E28713900303EC6 /* CustonAlertView */,
+				0480E72C1E28713000303EC6 /* CustomDissmis */,
+				0480E72E1E28713F00303EC6 /* CustomPopupWindow */,
 				048469F81E0CCBBC000D549C /* AppDelegate.swift */,
-				048469F91E0CCBBC000D549C /* PHCustimViewController.swift */,
-				048469FA1E0CCBBC000D549C /* PHCustomView.swift */,
-				048469FB1E0CCBBC000D549C /* PHPresentingAnimator.swift */,
 				048469FC1E0CCBBC000D549C /* ViewController.swift */,
 			);
 			path = Class;
@@ -479,9 +509,11 @@
 			files = (
 				04846A011E0CCBBC000D549C /* ViewController.swift in Sources */,
 				048469FE1E0CCBBC000D549C /* PHCustimViewController.swift in Sources */,
+				0480E7321E28713F00303EC6 /* PHPopupWindowView.swift in Sources */,
 				048469FD1E0CCBBC000D549C /* AppDelegate.swift in Sources */,
 				048469FF1E0CCBBC000D549C /* PHCustomView.swift in Sources */,
 				04846A001E0CCBBC000D549C /* PHPresentingAnimator.swift in Sources */,
+				0480E7311E28713F00303EC6 /* PHPopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
